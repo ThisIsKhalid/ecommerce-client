@@ -1,13 +1,62 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-131921: #131921;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
 }
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.input-style {
+  box-shadow: none;
+  border-color: inherit;
+}
+
+/* header part start */
+.header-top-strip {
+  border-bottom: 1px solid var(--color-3b4149);
+  background-color: var(--color-131921);
+}
+.header-upper {
+  background-color: var(--color-3b4149);
+}
+.header-upper .header-upper-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-bottom {
+  background-color: var(--color-232f3e);
+}
+.header-bottom .menu-links a,
+.header-bottom .dropdown button {
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+}
+
+.header-bottom .dropdown button::before {
+  content: url(../src/Assets/images/menu.svg);
+}
+/* header part end */
