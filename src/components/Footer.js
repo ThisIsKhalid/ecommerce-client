@@ -1,6 +1,5 @@
 import React from "react";
 import newsletterIcon from '../Assets/images/newsletter.png'
-import { FaSearch } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -19,7 +18,7 @@ const Footer = () => {
                 <div className="input-group">
                   <input
                     type="text"
-                    placeholder="Search…"
+                    placeholder="Enter your email"
                     className="input w-full focus:outline-none"
                   />
                   <button className="px-4 bg-[#febd69] text-base font-medium">
@@ -32,7 +31,26 @@ const Footer = () => {
         </div>
       </footer>
       <footer className="py-3">
-        
+        <div className="container mx-auto">
+          <div className="grid grid-cols-4">
+            <div>
+              <h4 className="text-white text-lg">Contact Us</h4>
+              <div></div>
+            </div>
+            <div>
+              <h4 className="text-white text-lg">Information</h4>
+              <div></div>
+            </div>
+            <div>
+              <h4 className="text-white text-lg">Account</h4>
+              <div></div>
+            </div>
+            <div>
+              <h4 className="text-white text-lg">Quick Links</h4>
+              <div className="footer-links"></div>
+            </div>
+          </div>
+        </div>
       </footer>
       <footer className="py-4">
         <div className="container mx-auto">
@@ -48,3 +66,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// 1.18 https://www.youtube.com/watch?v=eu0rExO_C3A
