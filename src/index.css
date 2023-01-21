@@ -60,3 +60,15 @@ a {
   content: url(../src/Assets/images/menu.svg);
 }
 /* header part end */
+
+
+/* footer part start */
+footer {
+  background-color: var(--color-232f3e);
+}
+
+footer:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* footer part end */
